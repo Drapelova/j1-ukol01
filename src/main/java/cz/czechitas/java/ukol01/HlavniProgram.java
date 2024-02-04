@@ -14,7 +14,7 @@ public class HlavniProgram {
 
     //TODO implementace domácího úkolu
 
-  nakresliPrasatko();
+ nakresliSlunicko();
   }
 
 
@@ -32,7 +32,7 @@ public class HlavniProgram {
           zofka.turnRight(90);
 
   */
-  public void nakresliObdelnik() {
+    public void nakresliObdelnik() {
 
     zofka.turnRight(90);
     zofka.move(200);
@@ -75,6 +75,21 @@ public class HlavniProgram {
         zofka.move(200);
         zofka.turnRight(90);
         nakresliNozicky();
+    }
+
+
+
+     public void nakresliSlunicko() {
+      for (int i = 0; i < 7; i++) {
+        zofka.turnLeft(90);
+        zofka.move(30);
+        zofka.turnRight(180);
+        zofka.move(30);
+        zofka.turnLeft(40);
+        zofka.move(30);
+
+      }
+
     }
     }
 
