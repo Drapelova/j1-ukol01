@@ -41,7 +41,16 @@ public class HlavniProgram {
     zofka.move(200);
     zofka.penDown();
     nakresliSlunicko();
-
+    zofka.turnLeft(170);
+    zofka.penUp();
+    zofka.move(500);
+    zofka.turnRight(180);
+    zofka.penDown();
+    nakresliN();
+    nakresliA();
+nakresliT();
+nakresliK();
+nakresliA();
   }
 
 
@@ -150,8 +159,76 @@ public class HlavniProgram {
         zofka.turnRight(90);
         zofka.penDown();
        }
+         public void nakresliN() {
+           zofka.move(80);
+           zofka.turnRight(135);
+           zofka.move(110);
+           zofka.turnLeft(135);
+           zofka.move(80);
+           zofka.turnLeft(180);
+           zofka.move(80);
+           zofka.penUp();
+           zofka.turnLeft(90);
+           zofka.move(20);
+           zofka.turnLeft(90);
+           zofka.penDown();
+         }
+  public void nakresliA() {
+    zofka.turnRight(30);
+      zofka.move(100);
+    zofka.turnRight(120);
+    zofka.move(100);
+    zofka.turnLeft(180);
+    zofka.move(50);
+    zofka.turnLeft(60);
+    zofka.move(53);
+    zofka.turnLeft(60);
+    zofka.move(50);
+    zofka.turnLeft(120);
+    zofka.penUp();
+    zofka.move(150);
+    zofka.turnLeft(90);
+    zofka.penDown();
+}
+  public void nakresliT() {
+      zofka.move(100);
+      zofka.turnLeft(90);
+      zofka.move(30);
+      zofka.turnLeft(180);
+      zofka.move(60);
+      zofka.turnLeft(180);
+      zofka.move(30);
+      zofka.turnLeft(90);
+      zofka.move(100);
+      zofka.penUp();
+      zofka.turnLeft(90);
+      zofka.move(100);
+      zofka.turnLeft(90);
+      zofka.penDown();
+       }
+  public void nakresliK() {
+      zofka.move(100);
+      zofka.turnLeft(180);
+      zofka.move(50);
+      zofka.turnLeft(150);
+      zofka.move(50);
+      zofka.turnLeft(180);
+      zofka.move(50);
+      zofka.turnLeft(90);
+      zofka.move(50);
+      zofka.turnLeft(180);
+      zofka.move(50);
+      zofka.turnLeft(120);
+      zofka.move(50);
+      zofka.turnLeft(90);
+      zofka.penUp();
+      zofka.move(100);
+      zofka.turnLeft(90);
+      zofka.penDown();
+        }
+         }
 
-    }
+
 
 
 
